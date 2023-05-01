@@ -32,11 +32,10 @@ public:
     Fraction operator+(const Fraction& other) const;
     friend Fraction operator+( const Fraction& fracconst ,float num);
     friend Fraction operator+( float num,const Fraction& fracconst );
-    ////////////////////////////
-    //bool isValidStream(int numerator, int denominator);
+    
     bool checkInteger(std::string input);
     friend std::istream &operator>>(std::istream& in_put,  Fraction& franc);
-    ///////////////////
+   
     Fraction operator-(const Fraction& other) const;
     friend Fraction operator-( const Fraction& fracconst ,float num);
     friend Fraction operator-( float num,const Fraction& fracconst );
